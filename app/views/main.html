@@ -1,6 +1,16 @@
-<div class="jumbotron">
-  
-</div>
-<div class="timeline">
-  
-</div>
+<ul class="nav nav-pills">
+  <li ng-class="{ active: isActive('location')}"><button class="btn btn-default" ng-click="operation('location')">Location</button></li>
+  <li ng-class="{ active: isActive('company')}"><button class="btn btn-default" ng-click="operation('company')">Company</button></li>
+  <li ng-class="{ active: isActive('salary')}"><button class="btn btn-default" ng-click="operation('salary')">Salary</button></li>
+  <li ng-class="{ active: isActive('jobtype')}"><button class="btn btn-default" ng-click="operation('jobtype')">Job Type</button></li>
+  <li ng-class="{ active: isActive('category')}"><button class="btn btn-default" ng-click="operation('category')">Category</button></li>
+
+  <div style="float:right">
+    Type : <span class="dataType"> </span><br/>
+    Timeline : <span class="dataTimeSpan"> </span>
+  </div>
+</ul>
+
+<div class="jumbotron"> </div>
+<div class="legend"> </div>
+<div class="timeline"> </div>
